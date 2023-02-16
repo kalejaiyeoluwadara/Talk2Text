@@ -16,11 +16,15 @@ recognition.onresult = function(event) {
 document.getElementById("start-button").addEventListener("click", function() {
     recognition.start();
 });
-
+const pal = document.querySelector('.pal');
 // copy the text to the clipboard when the copy button is clicked
 document.getElementById("copy-button").addEventListener("click", function() {
     const text = document.getElementById("text").textContent;
     navigator.clipboard.writeText(text);
+    pal.style.visibility = 'visible';
+     setTimeout(function() {
+    pal.style.visibility = 'hidden';
+  }, 2000);
 });
 
 // set
