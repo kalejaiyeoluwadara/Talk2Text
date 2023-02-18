@@ -1,6 +1,22 @@
  body {
       background: linear-gradient(45deg, #e6e6e6, #f5f5f5);
     }
+#btn {
+ display: flex;
+ margin: 20px auto;
+ align-items: center;
+ justify-content: space-between;
+  
+}
+#ms{
+    background-color: #2B579A;
+    border-color: #2B579A;
+}
+#ed a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .mw6 {
     max-width: 30rem;
