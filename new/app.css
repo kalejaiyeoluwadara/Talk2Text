@@ -5,6 +5,9 @@
 .mw6 {
     max-width: 30rem;
 }
+#id{
+    background-color: "#FFFC00";
+}
 .pal{
     padding: 10px;
     display: flex;

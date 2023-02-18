@@ -2,7 +2,7 @@
 const recognition = new webkitSpeechRecognition();
 
 // set the recognition language to the user's language
-recognition.lang = window.navigator.language;
+recognition.lang = 'en-NG'; // set to Nigerian English
 
 // define a function to handle the recognition result
 recognition.onresult = function(event) {
@@ -16,6 +16,7 @@ recognition.onresult = function(event) {
 document.getElementById("start-button").addEventListener("click", function() {
     recognition.start();
 });
+
 const pal = document.querySelector('.pal');
 // copy the text to the clipboard when the copy button is clicked
 document.getElementById("copy-button").addEventListener("click", function() {
@@ -41,4 +42,3 @@ function setText(text) {
 // disable the copy button initially
 const copyButton = document.getElementById("copy-button");
 copyButton.disabled = true;
-
